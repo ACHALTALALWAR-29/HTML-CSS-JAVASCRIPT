@@ -1,0 +1,71 @@
+*.{
+	text-align: center;
+}
+h2
+{ text-underline-offset: revert-layer;
+	text-decoration: underline;
+	color :green;
+	text-align: center;
+}
+body{
+	background-color: rgb(245,25,110);
+}
+button{
+	color: white;
+	background-color: #5C164E;
+}
+#box{
+	background-color: white;
+}
+.AD
+{
+	background-color: blue
+}
+div
+{ background-color: yellow;
+	height: 100px;
+	width: 100px;
+	margin: 25px;
+	padding: 30px;
+	display : inline-block;
+	transition: all 3s ease-in 1s;
+	animation: coloer 2s ease-in 0s infinite normal;
+
+}
+@keyframes coloer{
+	0%{
+		left: 1px;
+		background-color: aquamarine;
+	}
+	50%{
+		left: 100px;
+		background-color: royalblue;
+		text-color:yellow;
+		font-style: revert;
+		font-size: 50px;
+
+	}100%{
+		left: 100px;
+		background-color: black;
+		font-size: 30px;
+
+	}
+	50%{
+		left: 100px;
+		background-color: royalblue;
+
+	}
+}
+div:hover{
+	background-color: deeppink;
+	transform: skew(50deg);
+	translate:(100px, 80px);
+}
+div:active{
+	background-color: rosybrown;
+}
+@media (min-width:600px){
+	div{
+		background-color: RED;
+	}
+}
